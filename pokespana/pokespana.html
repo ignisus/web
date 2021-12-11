@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Ignisus, eldiosx, ignisus.ddns.net" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330800379775734" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pokespana.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link rel="icon" href="images/aeball.png">
+    <title>PokeSpaña</title>
+</head>
+<body background="images/fondo.jpg">
+    <img class="loader" src="images/pageLoader.gif" alt="cargando...">
+    <!--<H1 class="titulo"><i>PokeSpaña</i></H1>-->
+    <div class="titulo"><img src="images/title.png" alt=""></div>
+    <header id="navbar">
+        <input type="checkbox" id="btn-mainmenu" />
+        <label for="btn-mainmenu">
+            <img src="images/mainmenu.png" alt="">
+        </label>
+            <div class="title_mobile"><a href="https://ignisus.ddns.net"><img class="logotext" src="images/logotext.png" alt="Foro"></a></div>
+        <nav class="mainmenu">
+            <ul>
+                <div class="title"><a href="https://ignisus.ddns.net"><img class="logotext" src="images/logotext.png" alt="Foro"></a></div>
+                <li><a href="pokespana">PokeSpaña</a></li>
+                <li><a onclick="error()">Descargar</a></li>
+                <li><a href="https://trello.com/pokemonespanax">Bibliografía</a></li>
+                <li><a href="https://discord.gg/jbeCEshTur" target="_blank">Discord</a></li>
+                <li class="menuright"><a onclick="hizoClick()" href="mailto:ignisus@pm.me?subject=Reportar">Reportar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--CUERPO--> 
+    <section class="noticias">
+        <!--FORO--> 
+                    <div class="in-flex">
+                        <iframe class="trailer" center width="50%" height="350px" src="https://www.youtube.com/embed/jhJms2eUJy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="in-flex">
+        <!--NOTICIA_1--> 
+                        <div>
+                            <a>Proyecto PokéSpaña</a>
+                            <p>Versión: Alpha 19.1
+                                <br>Ultima actualización: 2019
+                                <br>Plataformas compatibles: Windows - Linux - MacOS - Android - Ios (Requisitos 128Mb ram libres y compatibilidad con OpenGL) 
+                                <br><a onclick="error()" href="#DescargaNoDisponible">Descargar</a>
+                            </p>
+                        </div>
+        <!--NOTICIA_2--> 
+                        <div>
+                            <a>Donar con PayPal:</a>
+                            <form class="paypal" action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="LSNMH7WJQZ7J6" />
+                                <input type="image" src="https://www.paypalobjects.com/en_US/ES/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - ¡El pago más seguro!" alt="Donate with PayPal button" />
+                                <img alt="" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
+                            </form>
+                        </div>
+                    </div>
+                </section>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(".loader").fadeOut("slow");
+        });
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            document.getElementById("navbar").style.zIndex = "9999";
+        }
+    </script>
+    <script>
+        function hizoClick() {
+            alert("Envia un correo a: ignisus@pm.me");
+        }
+    </script>
+        <script>
+            function error() {
+                alert("La descarga no esta disponible por el momento.");
+            }
+        </script>
+</body>
+</html>
