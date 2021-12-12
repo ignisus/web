@@ -94,4 +94,7 @@ main {
         min-width: 200px;
     }
 }
+.redondear {
+    border-radius: 10%;
+}
     /*Tema*/
