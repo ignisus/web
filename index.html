@@ -15,12 +15,13 @@
         <meta itemprop="email" content="ignisus@pm.me">
         <meta itemprop="ignisusland" content="Ip: ignisus.ddns.net">
 <!--SCRIPTS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330800379775734" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/basic.js"></script>
+        <script type="text/javascript" src="js/load.js"></script>
 <!--CSS-->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
 <!--CABECERA-->
         <link rel="icon" type="image/logo" href="images/ignisus.png">
         <title>Comunidad Ignisus</title>
@@ -39,12 +40,12 @@
             <nav class="mainmenu">
                 <ul>
                     <div class="title"><a href="https://ignisus.ddns.net"><img class="logotext" src="images/logotext.png" alt="Foro"></a></div>
-                    <li><a href="productos/productos">Productos</a></li>
-                    <li><a href="galeria/galeria">Galería</a></li>
-                    <li><a href="pokespana/pokespana">PokeSpaña</a></li>
-                    <li><a href="ignisusland/ignisusland">IgnisusLand</a></li>
-                    <li><a href="https://discord.gg/jbeCEshTur" target="_blank">Discord</a></li>
-                    <li class="menuright"><a onclick="hizoClick()" href="mailto:ignisus@pm.me?subject=Reportar">Soporte</a></li>
+                    <li><a href="productos/productos"><span class="icon-cart"></span> Productos</a></li>
+                    <li><a href="galeria/galeria"><span class="icon-images"></span> Galería</a></li>
+                    <li><a href="pokespana/pokespana"><span class="icon-radio-unchecked"></span> PokeSpaña</a></li>
+                    <li><a href="ignisusland/ignisusland"><span class="icon-checkbox-unchecked"></span> IgnisusLand</a></li>
+                    <li><a href="https://discord.gg/jbeCEshTur" target="_blank"><span class="icon-discord"></span> Discord</a></li>
+                    <li class="menuright"><a onclick="hizoClick()" href="mailto:ignisus@pm.me?subject=Reportar"><span class="icon-mail2"></span> Soporte</a></li>
                 </ul>
             </nav>
         </header>
@@ -77,7 +78,7 @@
                             <img alt="" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
                         </form>
                         
-                        <span>Open Source: <a href="https://github.com/ignisus" target="_blank">https://github.com/ignisus</a></span>
+                        <span>Open Source: <a href="https://github.com/ignisus" target="_blank">github.com/ignisus</a></span>
                     </div>
                 </div>
             </section>
@@ -87,31 +88,27 @@
                 </div>
             </footer>
         </div>
-<!--SCRIPTS--> 
-        <script type="text/javascript">
-            $(window).load(function () {
-                $(".loader").fadeOut("slow");
-            });
-        </script>
-<!--MENU--> 
-        <script>
-            window.onscroll = function () { myFunction() };
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-                document.getElementById("navbar").style.zIndex = "9999";
-            }
-        </script>
-<!--SOPORTE--> 
-        <script>
-            function hizoClick() {
-                alert("Envia un correo a: ignisus@pm.me");
-            }
+                <script>
+        //CARGA
+                    $(window).load(function () {
+                        $(".loader").fadeOut("slow");
+                    });
+        //MENU
+                    window.onscroll = function () { myFunction() };
+                    var navbar = document.getElementById("navbar");
+                    var sticky = navbar.offsetTop;
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } else {
+                            navbar.classList.remove("sticky");
+                        }
+                        document.getElementById("navbar").style.zIndex = "9999";
+                    }
+        //SOPORTE
+                    function hizoClick() {
+                        alert("Envia un correo a: ignisus@pm.me");
+                    }
         </script>
     </body>
 </html>
