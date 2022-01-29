@@ -1,6 +1,6 @@
 # IgnisusWebBeta
-Test beta
-La primera comunidad social open source :D
+Test
+Comunidad social open source :D
 Active: https://ignisus.ddns.net/
 
 Proximo objetivo: (Cambiar las fuentes de alimentacion de nuestro CPD a fuentes titanium)
