@@ -1,0 +1,101 @@
+/*general*/
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+    color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000;
+}
+main {
+    padding: 20px;
+}
+.titulo {
+    font-family: 'Times New Roman';
+    font-size: 10vw;
+    text-align: center;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke: 0.3vw #fff;
+    padding: 10px;
+    margin: 0px 0px 1vw 0px;
+}
+/*Carga*/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(0,0,0, .8);
+}
+/*Otros*/
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+}
+.in-flex {
+    flex: 2;
+    color: white;
+    height: 2000px;
+    min-width: 355.5px;
+}
+.in-flex:first-child {
+    flex: 4;
+    background-color: rgba(0, 0, 0, .8);
+    margin: 20px;
+    margin-bottom: 0px;
+}
+.in-flex div {
+    padding: 15px; 
+    background-color: rgba(0, 0, 0, .8);
+    margin: 20px;
+    mask-border-width: 100%;
+}
+.paypal {
+    width: 50%;
+    height: 50%;
+    margin: 20%;
+}
+.clashroyal {
+    width: 50%;
+    height: 50%;
+    margin: 20%;
+}
+.foro {
+    width: 100%;
+    height: 100%;
+}
+.logo {
+    width: 50%;
+    height: 50%;
+    margin: 25%;
+}
+.centrar {
+    text-align: center;
+}
+@media (max-width:750px) {
+    .in-flex {
+        height: 600px;
+    }
+    .top_logeo {
+        padding-right: 3%;
+    }
+}
+@media (max-width:450px) {
+    .in-flex {
+        flex: 1;
+        color: white;
+        height: 500px;
+        min-width: 200px;
+        
+    }
+}
+.redondear {
+    border-radius: 10%;
+}
+    /*Tema*/
