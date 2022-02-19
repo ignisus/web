@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--POWERED BY IGNISUS-->
     <head>
 <!--METAS-->
         <meta charset="UTF-8">
@@ -15,7 +16,8 @@
         <meta itemprop="email" content="ignisus@pm.me">
         <meta itemprop="ignisusland" content="Ip: ignisus.ddns.net">
 <!--SCRIPTS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/loader.js"></script>
 <!--CSS-->
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
@@ -25,7 +27,7 @@
         <title>Comunidad Ignisus</title>
     </head>  
     <body background="images/fondo.jpg">
-        <img class="loader" src="images/pageLoader.gif" alt="cargando...">
+        <img class="loader" src="images/pageLoader.gif" alt="cargando..." id="loader">
 <!--TOP--> 
         <p class="top_logeo"><a class="logeo" href="https://ignisus.ddns.net/login/index">Entrar | Registrarse</a></p>
 <!--MENU PRINCIPAL--> 
@@ -75,7 +77,6 @@
                             <input type="image" src="https://www.paypalobjects.com/en_US/ES/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - ¡El pago más seguro!" alt="Donate with PayPal button" />
                             <img alt="" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
                         </form>
-                        
                         <span>&nbsp;Open Source: <a href="https://github.com/ignisus" target="_blank">github.com/ignisus</a></span>
                     </div>
                 </div>
@@ -86,11 +87,8 @@
                 </div>
             </footer>
         </div>
+<!--SCRIPTS-->        
                 <script>
-        //CARGA
-                    $(window).load(function () {
-                        $(".loader").fadeOut("slow");
-                    });
         //MENU
                     window.onscroll = function () { myFunction() };
                     var navbar = document.getElementById("navbar");
